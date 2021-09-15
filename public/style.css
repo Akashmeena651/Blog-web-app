@@ -1,0 +1,110 @@
+#newPost{ 
+    width: 60%; 
+    border: 5px solid #333;
+    margin: 10px 0px 80px 0px;
+    padding: 20px 40px 100px 40px;
+}
+#newPost input{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border : 2px solid rgb(151, 151, 151);
+    border-radius: 8px;
+    margin : 0px 0px 5px 0px;
+}
+
+
+#newPost textarea{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border : 2px solid rgb(151, 151, 151);
+    border-radius: 8px;
+    margin : 0px 0px 5px 0px;
+}
+
+#newPost label{
+    float: left;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#newPost a{ 
+    float: left;
+    margin: 20px 0px 30px 0px; 
+}
+#newPost .btn-primary{
+    width: 20%;
+    float: left;
+    font-size: 18px;
+}
+
+#newPost .formType{
+    font-weight:600;
+    font-size:40px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+
+
+header{
+    font-size:25px;
+    background-color: #333;
+    color: white;
+    min-height: 40px;
+    border-bottom: 5px solid rgb(87, 87, 87);
+    /* display: inline; */
+} 
+header a{
+    color: white;
+    text-decoration: none;
+}
+header li{  
+    display: inline;
+    /* border: 1px solid #ffffff; */
+    padding-right: 30px;
+    text-decoration: none;
+    /* float: right; */
+}
+header nav{
+    float: right;
+}
+#branding{
+    padding-left: 150px;
+    font-size: 40px;
+}
+nav ul{
+    margin-top: 15px;
+    padding-right:150px;
+}
+a:hover{
+    color: #a3a3a3;
+    text-decoration: none;
+}
+#singlePost{
+    width: 60%;
+    border: 5px solid #333;
+    border-radius: 12px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+     
+}
+#singlePost h1{
+    float: left;
+    padding-left: 8px;
+}
+#singlePost p{ 
+    padding-left: 8px;
+    word-wrap: break-word;
+}
+#singlePost img{
+    width: 100%;
+}
+
+#delete{
+    display: inline;
+}
+
+.btn{
+    padding-left: 30px;
+    padding-right: 30px;
+}

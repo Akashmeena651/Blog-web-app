@@ -1,0 +1,22 @@
+<%- include('./partials/header'); -%>
+    <center>
+        <div id="singlePost" class="container">
+            <h1>
+                <%= postFound['title'] %>
+            </h1>    
+            <img src="<%=postFound.image%>">
+            <p>
+                <%= postFound['content'] %>
+            </p>
+            <p>
+                <%= postFound['created'] %>
+            </p>  
+            <div id="extras">
+                <a href="/crunchSpot/<%= postFound['_id']%>/edit" class="btn btn-success"> update</a> 
+                <form id="delete" action="/crunchSpot/<%= postFound['_id']%>?_method=DELETE" method="POST">
+                    <button class=" btn btn-danger"> delete</button>
+                </form>
+            </div>
+        </div>    
+    </center>
+<%- include('./partials/footer'); -%>

@@ -1,0 +1,21 @@
+<%- include('./partials/header'); -%> 
+
+<% posts.forEach(function(element){ %>
+    <center>
+        <div class="card mb-4" style="margin-top: 10px; width: 65%;background-color: #333; color: white">
+            <img class="card-img-top" style="max-height: 500px;" src="<%=element.image%>" alt="Card image cap">
+            <div class="card-body">
+            <h1 class="card-title"><%= element['title'] %></h1>
+            <p class="card-text" style="font-size:25px">
+                <%= element['content'].substring(0,50) %>...
+            </p>
+            <a href="/crunchSpot/<%= element['_id'] %>" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer" style="font-size: 17px;background-color: rgb(87, 87, 87);">
+            <%= element['created'] %> 
+            </div>
+        </div>
+    </center>
+<% }); %>
+
+<%- include('./partials/footer'); -%>

@@ -1,0 +1,26 @@
+<%- include('./partials/header'); -%>
+<form action="/crunchSpot" method="POST">
+    <center>
+        <div class="container" id="newPost">
+            <div class="formType">
+                New Post
+            </div> 
+            <br>
+            <br>
+            <br>
+            <label>title</label>
+            <input type="text" name="newPost[title]" placeholder="title">
+            <br>
+            <label>image</label>
+            <br>
+            <input type="text" name="newPost[image]" placeholder="image URL">
+            <br>
+            <label>content</label>
+            <br>
+            <textarea name="newPost[content]" rows="5"></textarea> 
+            <input type="submit" class="btn-primary">
+            
+        </div>
+    </center>
+</form> 
+<%- include('./partials/footer'); -%>
