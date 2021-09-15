@@ -11,7 +11,7 @@ let crunchSpotRoutes = require('./routes/crunchSpot')
 let auth = require('./routes/auth')
 let app = express();
 // middlewares configuration
-mongoose.connect("mongodb://localhost/crunchSpot",{ 
+mongoose.connect("mongodb+srv://akash:meena@cluster0.o96ml.mongodb.net/blogdatabase",{ 
     useNewUrlParser: true,
     useUnifiedTopology: true,
     },function(){
